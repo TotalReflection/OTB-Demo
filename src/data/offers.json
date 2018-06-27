@@ -1,0 +1,32 @@
+[
+{
+ "id":1,
+ "hotel":"Costa Adeje Gran Hotel",
+ "rating":5,
+ "location":"Costa Adeje, Tenerrife",
+ "price":"113650",
+ "available": "3 July 2014",
+ "duration":"7 days",
+ "from":"East Midlands, 2 Adults, 2 children & 1 infant"
+},
+{
+ "id":2,
+ "hotel":"Aguamarina Gold Hotel and Apartments",
+ "rating":4,
+ "location":"Costa Adeje, Tenerrife",
+ "price":"49999",
+ "available": "3 July 2014",
+ "duration":"7 days",
+ "from":"Manchester, 2 Adults & 2 children"
+},
+{
+ "id":3,
+ "hotel":"Laguna Park II",
+ "rating":3,
+ "location":"Costa Adeje, Tenerrife",
+ "price":"69680",
+ "available": "27 May 2014",
+ "duration":"7 days",
+ "from":"Liverpool, 2 Adults, & 1 child"
+}
+]
