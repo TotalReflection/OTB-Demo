@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Offer from './Offer'
 
-
 class OfferList extends Component {
   constructor(props) {
     super(props);
@@ -14,7 +13,7 @@ class OfferList extends Component {
   }
  render() {
    return(
-     <div>
+     <div className="wrapper">
         {this.props.data.map((offer ,key) => 
             <Offer id={offer.id} key={key} offer={offer} />
          )}

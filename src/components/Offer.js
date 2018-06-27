@@ -12,19 +12,27 @@ class Offer extends Component {
       available: "n/a",
       duration:"n/a",
       from:"n/a",
+      image:"image_01.png"
       }
     }
   }
   
  render() {
+
    return(
-     <div>
-         <div id={this.props.offer.id} key={this.props.offer.id}>
-            <h1> {this.props.offer.hotel}</h1>
-             <p> rating: {this.props.offer.rating} </p>
-             <p> price: {this.props.offer.price} </p>
-          </div>
-     </div>
+  
+       <div className="wrapper" style ={ { backgroundImage: "url(./assets/"+ this.props.offer.image +")" } } id={this.props.offer.id} key={this.props.offer.id}>
+            <aside className="aside aside-1">
+            <span>
+                <span className="heading">{this.props.offer.hotel}</span> {this.props.offer.rating}
+                </span>
+                      <p>{this.props.offer.location}</p>
+            </aside>
+            <aside className="aside aside-2"> Holiday Price: <p>{this.props.offer.price} </p></aside>
+  
+          <footer className="footer">  {this.props.offer.available} for {this.props.offer.duration} from {this.props.offer.from}</footer>
+      </div>
+
    )
  }
 }

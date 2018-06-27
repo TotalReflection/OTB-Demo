@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import OfferList from './OfferList'
 import localData from '../data/offers.json';
 
-
 class OfferControl extends Component {
 
   constructor(props) {
@@ -28,7 +27,6 @@ class OfferControl extends Component {
       if (target === this.state.active) {
         return this.state.accending ? "▲" : "▼"
       } 
-      
     }
 
     this.reverseList = () => {
@@ -64,12 +62,11 @@ class OfferControl extends Component {
 
    render() {
      return (
-       <div>
+       <div className="outer">
          <nav> 
-            <button onClick={this.reverseList}>Reverse</button>
-            <button id="hotel" onClick={this.reorder}>hotel</button>
-            <button id="rating" onClick={this.reorder}>rating</button>
-            <button id="price" onClick={this.reorder}>price</button>
+            <button className="btn" id="hotel" onClick={this.reorder}>sort alphabetically</button>
+            <button className="btn" id="rating" onClick={this.reorder}>sort by price</button>
+            <button className="btn" id="price" onClick={this.reorder}>sort by star rating</button>
          </nav>
          <main>
             <OfferList data={this.state.currentData.map(offers => offers)} />

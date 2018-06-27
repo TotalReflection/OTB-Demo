@@ -1,28 +1,127 @@
 .App {
   text-align: center;
+  background-size: 100% 100%;
+  background-repeat: repeat-x;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ .wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  max-width: 460px;
+  width:100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 12px;
+  color:#314992;
+  margin: 0px auto 10px auto;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.wrapper > * {
+
+  flex: 1 100%;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.header {
+  background: tomato;
 }
 
-.App-title {
-  font-size: 1.5em;
+.footer {
+  padding: 10px;
+  margin-top: 220px;
+  background: #00aee1;
+  color:#ffffff;
+  font-size: 12px;
+  font-weight: 200;
+  text-align: left;
+
 }
 
-.App-intro {
-  font-size: large;
+.App p {margin:0px; }
+
+.heading {
+  font-weight: 500;
+  font-size: 16px;
+}
+.aside-1 {
+  padding: 10px;
+  background-color: rgba(204, 218, 231, 0.95);
+  font-size: 12px;
+  color:#314992;
+  text-align: left;
+  font-weight: 200;
+  font-size: 12px;
+  word-break: break-word;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.aside-2 {
+  padding: 10px;
+  background:#f2d330;
+  text-align: right;
+  font-weight: 200;
+  font-size: 12px;
 }
+
+.aside-2 p {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.btn {
+  margin:10px;
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  color: #48bfe7;
+  font-size: 12px;
+  background: #b2ebf7;
+  padding: 18px 20px 18px 20px;
+  text-decoration: none;
+  border: none;
+}
+
+.btn:hover {
+  background: #22bfe5;
+  color:#ffffff;
+  text-decoration: none;
+  border: none;
+}
+.btn:active {
+  background: #00aee1;
+  color:#ffffff;
+  outline: none;
+  border: none;
+  }
+
+  .btn .active {
+    background: #00aee1;
+    color:#ffffff;
+    outline: none;
+    border: none;
+    }
+  
+  .btn:focus {
+    background: #00aee1;
+    color:#ffffff;
+    outline:0;
+  }
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; 
+    max-width: none;}
+  
+    .aside-1 {
+      max-width: 330px;
+      width:100%;
+    }
+    .aside-2 {
+      border-left:solid 2px #286dba;
+      max-width: 88px;
+      width:100%;
+    }
+}
+
+
+
+

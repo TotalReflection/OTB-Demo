@@ -7,7 +7,8 @@
  "price":"113650",
  "available": "3 July 2014",
  "duration":"7 days",
- "from":"East Midlands, 2 Adults, 2 children & 1 infant"
+ "from":"East Midlands, 2 Adults, 2 children & 1 infant",
+ "image":"image_01.png"
 },
 {
  "id":2,
@@ -17,7 +18,9 @@
  "price":"49999",
  "available": "3 July 2014",
  "duration":"7 days",
- "from":"Manchester, 2 Adults & 2 children"
+ "from":"Manchester, 2 Adults & 2 children",
+ "image":"image_02.png"
+
 },
 {
  "id":3,
@@ -27,6 +30,7 @@
  "price":"69680",
  "available": "27 May 2014",
  "duration":"7 days",
- "from":"Liverpool, 2 Adults, & 1 child"
+ "from":"Liverpool, 2 Adults, & 1 child",
+ "image":"image_03.png"
 }
 ]
