@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import bgimage from './assets/background.jpg'
 import OfferControl from './components/OfferControl';
