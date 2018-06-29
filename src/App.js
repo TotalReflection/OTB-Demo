@@ -6,7 +6,7 @@ class App extends Component {
   render() {
 
     return ( 
-      <div className="App" style ={ { backgroundImage: "url("+bgimage+")" } }>
+      <div className="offersApp" style ={ { backgroundImage: "url("+bgimage+")" } }>
         <OfferControl intialOrder={"price"} lang={"en"}/>
       </div>
     );

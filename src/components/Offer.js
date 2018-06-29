@@ -35,32 +35,30 @@ class Offer extends Component {
             <div className='head-inner'>
                 <span className="heading">{this.props.offer.hotel}</span> <OfferRating rating={this.props.offer.rating}/>
                 </div>
-                      <p>{this.props.offer.location}</p>
+                  <p>{this.props.offer.location}</p>
             </aside>
-            <aside className="aside aside-2"> Holiday Price: <p>{price}</p></aside>
-       
+
+            <aside className="aside aside-2"> holiday price<p>{price}</p></aside>
           <footer className="footer">
               <span className="availablility">
                 {this.props.offer.available} for {this.props.offer.duration} from {this.props.offer.from}
               </span>
-              <span className='button__container'>
-                <button className={'drop_btn'} style={ expandedStyle } onClick={this.handleDrop}>
+              <button className={'drop_btn'} style={ expandedStyle } onClick={this.handleDrop}>
                 {'❯'}
-                </button>
-              </span>
+              </button>
           </footer>
-          
       </div>
       <article className={'dropdown' + expandedClass}> 
-      <div className={'droptext'}>
-        <span> {this.props.offer.details}</span>
-
-      <span className='button__container'>
+          <div className={'droptext'}>
+            <span>
+              {this.props.offer.details}
+            </span>
+              <span className='btn__container'>
                 <button className={'book_btn'}  onClick={this.bookClick}>
-                BOOK NOW
+                    BOOK NOW
                 </button>
               </span>
-      </div>
+          </div>
       </article>
     </section>
 

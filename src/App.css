@@ -1,12 +1,12 @@
-.App {
+.offersApp {
   text-align: center;
-  background-size: auto 100%;
+  background-size: 100% 1789px;
   background-position: top center;
   background-repeat: repeat-x;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.outer {
+.offersApp .outer {
   display: flex;
   flex-flow: row wrap;
   max-width: 460px;
@@ -15,7 +15,7 @@
   transition: all 1000ms ease-in-out;
 }
 
-.wrapper {
+.offersApp .wrapper {
   display: flex;
   flex-flow: row wrap;
   font-weight: bold;
@@ -30,12 +30,12 @@
   margin: 0px auto 0px auto;
 }
 
-.wrapper>* {
+.offersApp .wrapper>* {
   flex: 1 100%;
 }
 
-.head-inner {
-  max-width: 250px;
+.offersApp .head-inner {
+  max-width: 270px;
   -ms-word-break: break-all;
   word-break: break-all;
   word-break: break-word;
@@ -45,7 +45,9 @@
   hyphens: auto;
 }
 
-.footer {
+.offersApp .footer {
+  display: flex;
+  justify-content: center;
   width: 100%;
   padding: 10px 10px;
   margin-top: 220px;
@@ -56,18 +58,18 @@
   text-align: left;
 }
 
-.App p {
+.offersApp  p {
   margin: 0px;
 }
 
-.heading {
-  font-weight: 500;
+.offersApp .heading {
+  font-weight: 700;
   font-size: 16px;
   width: 240px;
   max-width: 240px;
 }
 
-.aside-1 {
+.offersApp .aside-1 {
   padding: 10px;
   background-color: rgba(204, 218, 231, 0.95);
   font-size: 12px;
@@ -78,7 +80,7 @@
   word-break: break-word;
 }
 
-.aside-2 {
+.offersApp .aside-2 {
   padding: 10px;
   background: #f2d330;
   text-align: right;
@@ -87,42 +89,42 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
 }
 
-.aside-2 p {
-  font-weight: 500;
+.offersApp .aside-2 p {
+  font-weight: 800;
   font-size: 18px;
 }
 
-.btn {
+.offersApp .btn {
   width: 150px;
+  font-weight: 500;
   -webkit-border-radius: 4;
   -moz-border-radius: 4;
   border-radius: 3px;
   color: #48bfe7;
-  font-size: 12px;
+  font-size: 14px;
   background: #b2ebf7;
   padding: 18px 20px 18px 20px;
   text-decoration: none;
   border: none;
 }
 
-.btn:hover {
+.offersApp .btn:hover {
   background: #22bfe5;
   color: #ffffff;
   text-decoration: none;
   border: none;
 }
 
-.btn:active {
+.offersApp .btn:active {
   background: #00aee1;
   color: #ffffff;
   outline: none;
   border: none;
 }
 
-.button__container {
+.offersApp .btn__container {
   background-color: transparent;
   border: 0;
   padding: 0px;
@@ -131,16 +133,16 @@
   box-shadow: 1px 2px rgba(0, 170, 220, 0.5)
 }
 
-.button__container:focus,
-.button__container:active,
-.book_btn:focus,
-.book_btn:active {
+.offersApp .btn__container:focus,
+.offersApp .btn__container:active,
+.offersApp .book_btn:focus,
+.offersApp .book_btn:active {
   border: 0;
   outline: none;
   border: none;
 }
 
-.book_btn {
+.offersApp .book_btn {
   display: block;
   margin: 10px auto 0px auto;
   width: 150px;
@@ -155,19 +157,19 @@
   border: none;
 }
 
-section {
+.offersApp section {
   margin: 0px auto 10px auto;
 }
 
-.button__container .active,
-.btn:focus {
+.offersApp .btn__container .active,
+.offersApp .btn:focus {
   background: #00aee1;
   color: #ffffff;
   outline: none;
   border: none;
 }
 
-.dropdown {
+.offersApp .dropdown {
   overflow: hidden;
   height: 0;
   transition: 0.4s;
@@ -175,18 +177,17 @@ section {
   color: #00aee1;
 }
 
-.droptext {
+.offersApp .droptext {
   background-color: #ffffff;
   color: #00aee1;
-  padding: 10px;
-  padding: 10px;
+  padding: 10px 10px 0px 10px;
 }
 
-.expanded {
+.offersApp .expanded {
   height: auto;
 }
 
-.drop_btn {
+.offersApp .drop_btn {
   float: right;
   font-size: 20px;
   font-weight: 500;
@@ -198,44 +199,47 @@ section {
   margin: 0;
 }
 
-.availablility {
+.offersApp .availablility {
   max-width: 400px;
   display: inline-block;
   font-size: 14px;
+  margin:2px auto 0px 0px;
+  text-align:left;
 }
 
-.stars {
+.offersApp .stars {
   word-wrap: none;
-  color: #f2d330;
+  color: #ffad00;
   font-size: 12px;
+  text-shadow: 1px 1px 1px #f2d330;
 }
 
 @media all and (min-width: 460px) {
-  .aside {
+  .offersApp .aside {
     flex: 1 auto;
     max-width: none;
   }
-  .aside-1 {
+  .offersApp .aside-1 {
     max-width: 330px;
     width: 100%;
   }
-  .aside-2 {
+  .offersApp .aside-2 {
     border-left: solid 2px #286dba;
     max-width: 88px;
     width: 100%;
   }
-  .btn {
+  .offersApp .btn {
     width: auto;
   }
-  .btn__wrapper {
+  .offersApp .btn__wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
-  .btn__wrapper .button__container {
+  .offersApp .btn__wrapper .btn__container {
     margin: 10px 0px;
   }
-  .drop_btn {
+  .offersApp .drop_btn {
     float: right
   }
 }

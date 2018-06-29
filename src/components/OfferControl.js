@@ -60,13 +60,13 @@ class OfferControl extends Component {
      return (
        <div className="outer">
          <nav className="btn__wrapper"> 
-           <button id="hotel" className="button__container" onClick={this.reorder}>
+           <button id="hotel" className="btn__container" onClick={this.reorder}>
               <OfferBtn id="hotel"  text={'sort alphabetically'} active={this.state.active} />
             </button>
-            <button id="price" className="button__container" onClick={this.reorder}>
+            <button id="price" className="btn__container" onClick={this.reorder}>
               <OfferBtn id="price"  text={'sort by price'} active={this.state.active} />
             </button>
-            <button className="button__container" id="rating" onClick={this.reorder}>
+            <button className="btn__container" id="rating" onClick={this.reorder}>
               <OfferBtn id="rating"  text ={'sort by star rating'} active={this.state.active} />
             </button> 
 
