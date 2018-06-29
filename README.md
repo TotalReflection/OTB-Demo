@@ -20,6 +20,8 @@ Things to work on -
   - no app specific test suite
   - css could still be neater
 
+To run the app use the following in node 9+
+
   - [npm install](#npm-install)
   - [npm start](#npm-start)
   - [npm test](#npm-test)
