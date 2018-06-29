@@ -9,7 +9,6 @@ class OfferRating extends Component {
   }
   
  render() {
-  console.log(this.props.rating)
    let starRating = ''
    for(let i=0; i < this.props.rating; i++)
    {

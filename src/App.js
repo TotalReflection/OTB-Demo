@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import bgimage from './assets/background.jpg'
 import OfferControl from './components/OfferControl';
+
 class App extends Component {
   render() {
-
     return ( 
-      <div className="offersApp" style ={ { backgroundImage: "url("+bgimage+")" } }>
+      <div className="offersApp" style ={ { backgroundImage: "url(./assets/background.jpg)" } }>
         <OfferControl intialOrder={"price"} lang={"en"}/>
       </div>
     );
