@@ -13,7 +13,7 @@ class OfferList extends Component {
   }
  render() {
    return(
-     <div className="wrapper">
+     <div >
         {this.props.data.map((offer ,key) => 
             <Offer id={offer.id} key={key} offer={offer} />
          )}

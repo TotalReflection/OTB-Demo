@@ -1,16 +1,12 @@
 import React, { Component } from 'react'
 import OfferList from './OfferList'
+import OfferBtn from './OfferBtn'
 import localData from '../data/offers.json';
 
 class OfferControl extends Component {
 
   constructor(props) {
     super(props);
-
-    Option.defaultProps = {
-      lang:"en"
-     }
-
 
     const initialOrder = this.props.intialOrder;
     const initalData = localData.sort(function (a, b) {
@@ -48,7 +44,7 @@ class OfferControl extends Component {
     }
 
     this.reorder = (e) => {
-      const target = e.target.id
+      const target = e.currentTarget.id
       if (target === this.state.active) {
         this.reverseList();
       } 
@@ -63,10 +59,18 @@ class OfferControl extends Component {
    render() {
      return (
        <div className="outer">
-         <nav> 
-            <button className="btn" id="hotel" onClick={this.reorder}>sort alphabetically</button>
-            <button className="btn" id="rating" onClick={this.reorder}>sort by price</button>
-            <button className="btn" id="price" onClick={this.reorder}>sort by star rating</button>
+         <nav className="btn__wrapper"> 
+           <button id="hotel" className="button__container" onClick={this.reorder}>
+              <OfferBtn id="hotel"  text={'sort alphabetically'} active={this.state.active} />
+            </button>
+            <button id="price" className="button__container" onClick={this.reorder}>
+              <OfferBtn id="price"  text={'sort by price'} active={this.state.active} />
+            </button>
+            <button className="button__container" id="rating" onClick={this.reorder}>
+              <OfferBtn id="rating"  text ={'sort by star rating'} active={this.state.active} />
+            </button> 
+
+           
          </nav>
          <main>
             <OfferList data={this.state.currentData.map(offers => offers)} />
@@ -76,5 +80,8 @@ class OfferControl extends Component {
    }
 }
 
+OfferControl.defaultProps = {
+  lang:"en"
+ }
 
 export default OfferControl;

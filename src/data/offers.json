@@ -8,7 +8,8 @@
  "available": "3 July 2014",
  "duration":"7 days",
  "from":"East Midlands, 2 Adults, 2 children & 1 infant",
- "image":"image_01.png"
+ "image":"image_01.png",
+ "details":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 },
 {
  "id":2,
@@ -19,8 +20,8 @@
  "available": "3 July 2014",
  "duration":"7 days",
  "from":"Manchester, 2 Adults & 2 children",
- "image":"image_02.png"
-
+ "image":"image_02.png",
+ "details":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
 },
 {
  "id":3,
@@ -31,6 +32,7 @@
  "available": "27 May 2014",
  "duration":"7 days",
  "from":"Liverpool, 2 Adults, & 1 child",
- "image":"image_03.png"
+ "image":"image_03.png",
+ "details":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
 }
 ]
